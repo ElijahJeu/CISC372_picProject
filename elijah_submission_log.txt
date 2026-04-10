@@ -1,0 +1,18 @@
+Script started on Fri Apr 10 13:02:18 2026
+]0;elijahj@r1n01.darwin:~/CISC372_picProject[?1034h[elijahj@r1n01 CISC372_picProject]$ export OMP_NUM_THREADS=4
+]0;elijahj@r1n01.darwin:~/CISC372_picProject[elijahj@r1n01 CISC372_picProject]$ time ./image_omp pic1.jpg edge
+Took 7 seconds
+
+real	0m6.817s
+user	0m7.164s
+sys	0m0.043s
+]0;elijahj@r1n01.darwin:~/CISC372_picProject[elijahj@r1n01 CISC372_picProject]$ time ./image_pth pic1.jpg edge
+Took 6 seconds
+
+real	0m6.670s
+user	0m7.088s
+sys	0m0.062s
+]0;elijahj@r1n01.darwin:~/CISC372_picProject[elijahj@r1n01 CISC372_picProject]$ exit
+exit
+
+Script done on Fri Apr 10 13:02:59 2026
