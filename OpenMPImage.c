@@ -53,7 +53,7 @@ uint8_t getPixelValue(Image* srcImage,int x,int y,int bit,Matrix algorithm){
 void convolute(Image* srcImage, Image* destImage, Matrix algorithm)
 {
     int row, pix, bit;
-	#pragma omp parallel for schedule(dynamic) 
+	#pragma omp parallel for collapse(2) schedule(static)
     for (row = 0; row < srcImage->height; row++)
     {
         for (pix = 0; pix < srcImage->width; pix++)
